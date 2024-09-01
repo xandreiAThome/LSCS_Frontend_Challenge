@@ -7,7 +7,7 @@ function StartScreen(props) {
         <br />
         Choose your answer from three different choices.
       </p>
-      <button className="start-button" onClick={props.startGame}>
+      <button className="start-button" onClick={props.startGame()}>
         Start
       </button>
     </div>
