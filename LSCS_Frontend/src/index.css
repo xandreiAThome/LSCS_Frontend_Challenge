@@ -41,12 +41,12 @@ button {
   font-size: 1em;
   font-weight: 500;
   font-family: inherit;
-  background-color: #1a1a1a;
+  background-color: #646cff;
   cursor: pointer;
   transition: border-color 0.25s;
 }
 button:hover {
-  border-color: #646cff;
+  border-color: white;
 }
 button:focus,
 button:focus-visible {
@@ -65,4 +65,22 @@ button:focus-visible {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+.start-screen > p {
+  margin: 0 0 16px 0;
+  text-align: center;
+}
+
+.question-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.question-container > button {
+  margin: 16px;
+}
+
+.choices-container {
 }

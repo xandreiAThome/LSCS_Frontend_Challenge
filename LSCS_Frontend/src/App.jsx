@@ -1,14 +1,18 @@
-import { useState } from "react";
-import reactLogo from "./assets/react.svg";
-import viteLogo from "/vite.svg";
 import StartScreen from "./components/StartScreen";
+import QuestionScreen from "./components/QuestionScreen";
+import React from "react";
 
 function App() {
-  const [count, setCount] = useState(0);
+  const [gameLoop, setGameLoop] = React.useState("home");
+
+  function startGame() {
+    setGameLoop("game");
+  }
 
   return (
     <div>
-      <StartScreen />
+      {gameLoop == "home" && <StartScreen startGame={() => startGame()} />}
+      {gameLoop == "game" && <QuestionScreen />}
     </div>
   );
 }
