@@ -1,5 +1,5 @@
 export default [
-  ["a. Two dot pattern", "b. Interferance pattern", "c. Fluctuating pattern"],
+  ["a. Two dot pattern", "b. Interference pattern", "c. Fluctuating pattern"],
   [
     "a. A function that describes the probability of finding a particle in a particular state.",
     "b. A function that describes the energy levels of an atom.",

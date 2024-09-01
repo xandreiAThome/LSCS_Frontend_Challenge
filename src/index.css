@@ -109,7 +109,7 @@ button:active {
 
 .progress-bar > div {
   flex: 1;
-  border: 1px solid black;
+  border: 1px solid #646cff;
   border-radius: 12px;
   margin: 1px;
 }
