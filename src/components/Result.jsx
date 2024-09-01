@@ -8,7 +8,7 @@ function Result(props) {
       </h1>
       <h2>
         {props.score / questions.length >= 0.8
-          ? "Great Job, you're quite the physicist"
+          ? "Great Job! You're quite the physicist"
           : props.score / questions.length >= 0.4
           ? "You're getting there"
           : "Study harder!"}
