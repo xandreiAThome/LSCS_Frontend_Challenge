@@ -10,5 +10,5 @@
 
 ### Built with
 
-- [![React][React.js]][React-url]
-- [![Vite][vitejs.dev][Vite-url]]
+- <a src="react.dev">React <img src="src/assets/react.svg" style="width:16px"></a>
+- <a src="vitejs.dev">Vite <img src="https://vitejs.dev/logo.svg" style="width:16px"></a>
