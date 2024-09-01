@@ -11,13 +11,13 @@ export default [
     "c. It states that the position and energy of a particle cannot both be precisely determined at the same time.",
   ],
   [
-    "a. A phenomenon where particles remain connected so that the state of one particle affects the state of another, no matter the distance between them.",
-    "b. A phenomenon where particles collide and exchange energy.",
+    "a. A phenomenon where particles collide and exchange energy.",
+    "b. A phenomenon where particles remain connected so that the state of one particle affects the state of another, no matter the distance between them.",
     "c. A phenomenon where particles move in a wave-like manner.",
   ],
   [
-    "a. The concept of superposition in quantum mechanics.",
-    "b. The concept of wave-particle duality.",
-    "c. The concept of quantum tunneling.",
+    "a. The concept of wave-particle duality.",
+    "b. The concept of quantum tunneling.",
+    "c. The concept of superposition in quantum mechanics.",
   ],
 ];

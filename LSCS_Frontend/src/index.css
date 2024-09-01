@@ -2,12 +2,9 @@
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
-
+  transition: all 1s;
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
-  background-image: url(assets/circle-scatter-haikei.svg);
-  background-size: cover;
-
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
@@ -43,7 +40,7 @@ button {
   font-family: inherit;
   background-color: #646cff;
   cursor: pointer;
-  transition: border-color 0.25s;
+  transition: all 0.25s;
 }
 button:hover {
   border-color: white;
@@ -53,10 +50,21 @@ button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
 }
 
+button:active {
+  scale: 0.9;
+}
+
+.sec-bg {
+  background-image: url(assets/blob-scatter-haikei.svg) !important;
+  transition: background-image 0.2s ease-in-out;
+}
+
 #root {
   display: flex;
   place-items: center;
   justify-content: center;
+  background-size: cover;
+  background-image: url(assets/circle-scatter-haikei.svg);
   height: 100vh;
 }
 
@@ -70,6 +78,7 @@ button:focus-visible {
 .start-screen > p {
   margin: 0 0 16px 0;
   text-align: center;
+  font-size: 20px;
 }
 
 .question-container {
@@ -92,14 +101,16 @@ button:focus-visible {
   display: flex;
   width: 40vw;
   min-width: 200px;
-  border: 1px solid;
   background-color: #c3c6ff;
+  border: 1px solid #c3c6ff;
   border-radius: 16px;
 }
 
 .progress-bar > div {
   flex: 1;
-  margin-left: 2px;
+  border: 1px solid black;
+  border-radius: 12px;
+  margin: 1px;
 }
 
 .highlight {
@@ -109,4 +120,15 @@ button:focus-visible {
 
 label {
   font-size: 20px;
+}
+
+.results-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.results-container > div > button {
+  margin: 12px;
 }

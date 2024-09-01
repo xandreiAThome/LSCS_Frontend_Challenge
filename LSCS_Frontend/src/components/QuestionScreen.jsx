@@ -1,6 +1,6 @@
-import questions from "./questions";
-import choices from "./choices";
-import answers from "./answers";
+import questions from "../data/questions";
+import choices from "../data/choices";
+import answers from "../data/answers";
 import React from "react";
 import ProgressBar from "./ProgressBar";
 
@@ -20,7 +20,6 @@ function QuestionScreen(props) {
     let answer = document.querySelector('input[name="choices"]:checked');
 
     if (answer != null && currQuestion < questions.length - 1) {
-      console.log(answer.value == answers[currQuestion]);
       if (answer.value === answers[currQuestion]) {
         props.incrementScore();
       }
@@ -28,7 +27,11 @@ function QuestionScreen(props) {
 
       answer.checked = false;
     } else if (currQuestion == questions.length - 1) {
-      console.log("hi");
+      if (answer.value === answers[currQuestion]) {
+        props.incrementScore();
+      }
+      setCurrQuestion(0);
+      props.showScore();
     }
   }
 
@@ -38,7 +41,6 @@ function QuestionScreen(props) {
       <h2>{questions[currQuestion]}</h2>
       <div className="choices-container">{displayChoices}</div>
       <button onClick={submitAnswer}>Next</button>
-      {props.score}
     </div>
   );
 }
